@@ -12,3 +12,17 @@ Ramaze.options.roots = [__DIR__]
 # Initialize controllers and models
 require __DIR__('model/init')
 require __DIR__('controller/init')
+
+gems = ['haml', 'dm-core', 'redis', 'ick', 'aquarium']
+Ramaze.setup :verbose => true do
+
+  gems.each do |g|
+    gem g
+  end
+
+end
+
+# Ramaze.options.adapter = Thin
+# Ramaze.options.cache = Redis
+
+

@@ -1,10 +1,11 @@
 # Define a subclass of Ramaze::Controller holding your defaults for all
 # controllers
 
-class Controller < Ramaze::Controller
+class DefaultController < Ramaze::Controller
   layout :default
   helper :xhtml
-  engine :Etanni
+  helper :form
+  engine :haml
 end
 
 # Here go your requires for subclasses of Controller:
