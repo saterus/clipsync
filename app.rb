@@ -13,7 +13,7 @@ Ramaze.options.roots = [__DIR__]
 require __DIR__('model/init')
 require __DIR__('controller/init')
 
-gems = ['haml', 'dm-core', 'redis', 'ick', 'aquarium']
+gems = ['haml', 'dm-core', 'redis', 'ick']
 Ramaze.setup :verbose => true do
 
   gems.each do |g|
